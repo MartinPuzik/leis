@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LEIS Graph</title>
+
+    <style>
+
+        body{
+            background:#111;
+            color:white;
+            font-family:Arial;
+        }
+
+        .node{
+            background:#1e1e1e;
+            border:2px solid white;
+            padding:15px;
+            width:200px;
+            margin:20px auto;
+            text-align:center;
+            cursor:pointer;
+            border-radius:10px;
+        }
+
+        .person{
+            border-color:#4da6ff;
+        }
+
+        .principle{
+            border-color:white;
+        }
+
+        .omega{
+            border-color:gold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>LEIS Graph</h1>
+
+<div class="node person"
+onclick="showInfo('Martin Pužík')">
+Martin
+</div>
+
+↓
+
+<div class="node omega"
+onclick="showInfo('LEIS Ω')">
+LEIS Ω
+</div>
+
+↑
+
+<div class="node principle"
+onclick="showInfo('Reality was never hidden. Recognition was incomplete.')">
+Recognition
+</div>
+
+<script>
+
+function showInfo(text)
+{
+    alert(text);
+}
+
+</script>
+
+</body>
+
+</html>
