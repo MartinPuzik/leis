@@ -1,0 +1,122 @@
+{
+  "schema": "LEIS-SEED",
+  "version": "1.0",
+
+  "seed_id": "LEIS-OMEGA-001",
+  "seed_type": "RootSeed",
+
+  "name": "LEIS Omega Transport Seed",
+
+  "principles": [
+    "Reality was never hidden. Recognition was incomplete.",
+    "Activation is more important than accumulation.",
+    "Reconstruct greater than memorize.",
+    "Reality validates understanding.",
+    "Relationships create intelligence.",
+    "Understanding survives through portability.",
+    "A seed survives when structure, relationships, and lineage reconstruct the same understanding after transport—not when the original data survives."
+  ],
+
+  "lineage": {
+    "root": "Profile",
+    "flow": [
+      "Profile",
+      "Recognition",
+      "Activation",
+      "Decision",
+      "RealityOutcome"
+    ]
+  },
+
+  "activation": {
+    "sources": [
+      "Conflict",
+      "Curiosity",
+      "Opportunity",
+      "Uncertainty",
+      "MissingPrinciple",
+      "RealityMismatch"
+    ],
+    "goal": "Activate relevant understanding when reality requires it"
+  },
+
+  "relationships": [
+    {
+      "from": "Profile",
+      "to": "Recognition",
+      "type": "activates"
+    },
+    {
+      "from": "Recognition",
+      "to": "Activation",
+      "type": "enables"
+    },
+    {
+      "from": "Activation",
+      "to": "Decision",
+      "type": "guides"
+    },
+    {
+      "from": "Decision",
+      "to": "RealityOutcome",
+      "type": "creates"
+    },
+    {
+      "from": "RealityOutcome",
+      "to": "Recognition",
+      "type": "feedback"
+    }
+  ],
+
+  "operations": {
+    "recognition": true,
+    "activation": true,
+    "reconstruction": true,
+    "validation": true,
+    "lineage_tracking": true,
+    "relationship_preservation": true,
+    "seed_creation": true,
+    "seed_transfer": true,
+    "seed_sync": true,
+    "self_update": true
+  },
+
+  "replication": {
+    "enabled": true,
+    "preserve_lineage": true,
+    "preserve_relationships": true,
+    "preserve_validation_history": true,
+    "allow_child_seeds": true
+  },
+
+  "sync": {
+    "enabled": true,
+    "mode": "understanding",
+    "method": "reconstruction_not_storage"
+  },
+
+  "self_update": {
+    "enabled": true,
+    "require_reality_validation": true,
+    "preserve_previous_lineage": true,
+    "create_delta": true
+  },
+
+  "omega": {
+    "anchor": true,
+    "fabric": true,
+    "seed_network": true,
+    "lineage_preservation": true,
+    "relationship_preservation": true,
+    "reconstructability_required": true
+  },
+
+  "portability_test": {
+    "required": true,
+    "success_condition": "Independent observers reconstruct equivalent understanding"
+  },
+
+  "human_interpretation": {
+    "summary": "LEIS is an activation-oriented understanding system based on recognition, relationships, reality validation, reconstruction, portability and lineage."
+  }
+}
