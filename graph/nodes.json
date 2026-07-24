@@ -1,15 +1,19 @@
-# LEIS Graph
-
-The first LEIS graph does not model documents.
-
-It models relationships between:
-
-- People
-- Sparks
-- Principles
-- Milestones
-- Reality Streams
-
-Documents are evidence.
-
-Relationships are understanding.
+{
+  "nodes": [
+    {
+      "id": "martin",
+      "label": "Martin",
+      "type": "person"
+    },
+    {
+      "id": "omega",
+      "label": "LEIS Ω",
+      "type": "omega"
+    },
+    {
+      "id": "recognition",
+      "label": "Recognition",
+      "type": "principle"
+    }
+  ]
+}
