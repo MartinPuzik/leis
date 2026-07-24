@@ -2,71 +2,117 @@
 <html>
 
 <head>
+
     <title>LEIS Graph</title>
 
     <style>
-body{
-    background:#111;
-    color:white;
-    font-family:Arial;
-    text-align:center;
-}
 
-.node{
-
-    width:220px;
-
-    padding:20px;
-
-    margin:20px auto;
-
-    border-radius:12px;
-
-    background:#1c1c1c;
-}
-
-.person{
-    border:2px solid #4da6ff;
-}
-
-.omega{
-    border:2px solid gold;
-}
-
-.principle{
-    border:2px solid white;
-}
-
-.edge{
-    color:gold;
-}
         body{
             background:#111;
             color:white;
-            font-family:Arial;
+            font-family:Arial, sans-serif;
+            text-align:center;
+            margin:40px;
+        }
+
+        h1{
+            color:white;
         }
 
         .node{
-            background:#1e1e1e;
-            border:2px solid white;
-            padding:15px;
-            width:200px;
+
+            width:220px;
+
+            padding:20px;
+
             margin:20px auto;
-            text-align:center;
+
+            border-radius:12px;
+
+            background:#1c1c1c;
+
             cursor:pointer;
-            border-radius:10px;
+
+            position:relative;
+
+            transition:0.3s;
+
+            opacity:0;
+
+            animation:appear 1s forwards;
+
+        }
+
+        .node:hover{
+
+            transform:scale(1.05);
+
         }
 
         .person{
-            border-color:#4da6ff;
-        }
-
-        .principle{
-            border-color:white;
+            border:2px solid #4da6ff;
         }
 
         .omega{
-            border-color:gold;
+            border:2px solid gold;
+        }
+
+        .principle{
+            border:2px solid white;
+        }
+
+        .edge{
+
+            color:gold;
+
+            margin:10px;
+
+            font-size:14px;
+
+        }
+
+        .tooltip{
+
+            display:none;
+
+            position:absolute;
+
+            top:-45px;
+
+            left:15px;
+
+            background:#333;
+
+            color:white;
+
+            padding:8px;
+
+            border-radius:6px;
+
+            font-size:12px;
+
+            white-space:nowrap;
+
+        }
+
+        .node:hover .tooltip{
+
+            display:block;
+
+        }
+
+        @keyframes appear{
+
+            from{
+                opacity:0;
+                transform:scale(0.8);
+            }
+
+            to{
+                opacity:1;
+                transform:scale(1);
+            }
+
         }
 
     </style>
@@ -74,65 +120,43 @@ body{
 </head>
 
 <body>
-<div class="node person">
-Martin
-</div>
 
-<div class="edge">
-creator
-</div>
-
-<div class="node omega">
-LEIS Ω
-</div>
-
-<div class="edge">
-validated principle
-</div>
-
-<div class="node principle">
-Recognition
-</div>
 <h1>LEIS Graph</h1>
 
 <div class="node person"
 onclick="showInfo('Martin Pužík')">
-Martin
+
+    Martin
+
+    <div class="tooltip">
+        Creator
+    </div>
+
 </div>
 
-↓
+<div class="edge">
+↓ creator ↓
+</div>
 
-<div
-class="node omega"
+<div class="node omega"
 onclick="showInfo('LEIS Ω')">
 
-LEIS Ω
+    LEIS Ω
+
+    <div class="tooltip">
+        Central LEIS Node
+    </div>
 
 </div>
 
-↑
+<div class="edge">
+↑ validated principle ↑
+</div>
 
 <div class="node principle"
 onclick="showInfo('Reality was never hidden. Recognition was incomplete.')">
-Recognition
-</div>
 
-<script>
+    Recognition
 
-function showInfo(text)
-{
-    alert(text);
-}
-<script>
-
-function showInfo(text)
-{
-    alert(text);
-}
-
-</script>
-</script>
-
-</body>
-
-</html>
+    <div class="tooltip">
+        Validated Principle
